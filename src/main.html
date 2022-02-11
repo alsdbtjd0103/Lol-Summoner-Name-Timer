@@ -3,11 +3,21 @@
 <head>
     <title>LoL Summoner Name Timer</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <div class="input_box" style="width: auto;">
-        <div class="input_box_header">Lol Summoner Name Timer</div>
-    </div>
+    <header style="text-align:center;">LoL Summoner Name Timer</header>
+    <hr>
 </head>
 <body>
+    <div class="input_box" style="width: auto;">
+        <div class="input_box_header">How much time do we have left?</div>
+        <form style="text-align:center">
+            <input class="name-box" type="text" id="input_name" placeholder="name" maxlength="16" minlength="2" required>
+            <select id="region">
+                <option value="KR">KR</option>
+                <option value="JP">JP</option>
+            </select>
+            <button id="searchBtn" class="searchBtn">Search</button>
+        </form>
+    </div>
     
 </body>
 </html>
