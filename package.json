@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alsdbtjd0103/Lol-Summoner-Name-Timer#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
     "request": "^2.88.2",
     "urlencode": "^1.1.0"
