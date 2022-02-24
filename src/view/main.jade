@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title LoL Summoner Name Timer 
+        link(rel="stylesheet", href="style.css")
+        header(style="text-align:center;") LoL Summoner Name Timer 
+    body 
+        form(action="/result", method="post" style="text-align:center;") 
+            p 
+                input(type="text" name="summonerName" placeholder="name" maxlength="16" minlength="2" required)
+            p 
+                select(name="region")
+                    option(value="asia") Asia   
+            p 
+                button(type="submit") Search 
