@@ -1,38 +1,38 @@
-body{
-    background-color:bisque;
+body {
+    background-color: bisque;
 }
 .input_box {
     position: relative;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     min-width: 0;
     background-color: rgb(236, 227, 227);
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius:0.25rem;
-    height:200px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    height: 200px;
     justify-content: space-evenly;
 }
 
-.input_box_header{
+.input_box_header {
     text-align: center;
     font-size: 25px;
 }
 
-.searchBtn{
+.searchBtn {
     background-color: rgb(152, 179, 228);
     border-radius: 5px;
     border-color: rgb(49, 76, 116);
     border: 1px solid;
-    transition-duration:0.3s;
+    transition-duration: 0.3s;
     box-shadow: 1px 1px 1px black;
 }
-.searchBtn:active{
-    margin-left:3px;
-    margin-top:3px;
-    box-shadow:none;
+.searchBtn:active {
+    margin-left: 3px;
+    margin-top: 3px;
+    box-shadow: none;
 }
-.name-box{
-    border-radius:5px;
-    
+.name-box {
+    border-radius: 5px;
+
 }
