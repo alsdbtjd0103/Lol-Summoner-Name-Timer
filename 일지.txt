@@ -24,7 +24,12 @@ ex) localhost:3000/asd.html
 
 
 템플릿 엔진
--> 매우 간편하게 할 수 있지만 지금 당장 알 필요는 없음
+-> js에서 html을 렌더링하기 위해서 필요함
+jade와 ejs가 대표적인데 우선 jade 이용
+app.set('views','./파일경로')
+app.set('view engine','jade')를 통해 jade 사용
+ 
+
 
 
 쿼리스트링
@@ -59,7 +64,25 @@ app.use(bodyParser.urlencoded({extended:false})
 
 -----------------------------------------------------------------------------------------------
 
+    fs.writeFile('data/'+title,description,function(err){
+        if (err){
+            res.status(500).send('Internal sever Error')
+            //500은 서버에러라는 뜻
+        }
+        res.send("HI,post "+title+' '+description);
 
+여기서 err_http_headers_sent 오류가 발생하는데 send를 두번이나 해서 그런다
+따라서 if문 안에 return res.status~로 적으면된다.
+
+---------------------------------------------------------------------------------------
+js에서 jade로 값 보내는 법
+
+res.render('{jade파일 이름}', {객체 형식의 값})
+
+-----------------------------------------------------------------------------------------
+
+한 라우터 app.get에 여러개의 path를 넣을 수 있음
+ex) app.get(['/topic','/topic/:id'], function(req,res){})
 
 
 
